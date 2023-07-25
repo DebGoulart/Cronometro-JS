@@ -91,7 +91,7 @@ body {
     font-weight: bold;
     float: right;
     position: relative;
-    margin-top: 5vh;
+    margin-top: 7vh;
     right: 0;
 }
 
@@ -143,6 +143,7 @@ body {
     cursor: default;
 }
 
+
 @media screen and (max-width: 480px) {
     body {
         justify-content: flex-start;
@@ -160,19 +161,30 @@ body {
         margin-bottom: 10px;
     }
 
-    #cronometro-container > #tempo-container {
+    #cronometro-container {
+        width: 100%;
+        max-width: 480px;
+        margin: auto; 
+    }
+
+    #cronometro-container > #tempo-container { 
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: row;
+        margin-left: 10%;
     }
 
     #cronometro-container > #tempo-container span {
         font-size: 60px;
+        display: inline-block;
+        margin-right: 10px;
     }
 
     #cronometro-container > #tempo-container > .ms {
         font-size: 20px;
-        margin-top: 3vh;
+        margin-top: 4vh;
+        float: right;
+        position: relative;
+        right: 0;
     }
 
     #cronometro-container > .botao-container {
