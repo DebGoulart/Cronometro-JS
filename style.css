@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik";
+}
+
+:root {
+    --gradient: linear-gradient(
+        90deg,
+        #845ec2,
+        #d65db1,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871
+    );
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: background-animado 50s infinite alternate;
+}
+
+@keyframes background-animado {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+#container {
+    height: auto;
+    width: 710px;
+    max-width: 710px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 16px 15px -3px rgba(0, 0, 0, 0.226);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container h1 {
+    margin: auto;
+    margin-top: 10vh;
+    font-size: 40px;
+    color: #3f3f3f;
+}
+
+#tempo-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 35px;
+}
+
+#cronometro-container {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    color: #3f3f3f;
+}
+
+#cronometro-container > #tempo-container {
+    
+    margin-top: 20px;
+}
+
+#cronometro-container > #tempo-container span {
+    font-size: 100px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#cronometro-container > #tempo-container > .ms {
+    font-size: 40px;
+    font-weight: bold;
+    float: right;
+    position: relative;
+    margin-top: 5vh;
+    right: 0;
+}
+
+#cronometro-container > .botao-container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 10vh;
+}
+
+#cronometro-container > .botao-container > button {
+    font-size: 20px;
+    width: 110px;
+    height: 40px;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+}
+
+.botao-iniciar {
+    background-color: rgb(62, 238, 74);
+}
+
+.botao-pausar {
+    background-color: rgb(255, 218, 68);
+}
+
+.botao-resetar {
+    background-color: rgb(255, 60, 60);
+}
+
+#cronometro-container > .botao-container > .botao-pausar:disabled {
+    background-color: rgb(174, 140, 3);
+    cursor: default;
+}
+
+#cronometro-container > .botao-container > .botao-resetar:disabled {
+    background-color: rgb(153, 9, 9);
+    cursor: default;
+}
+
+#cronometro-container > .botao-container > .botao-iniciar:disabled {
+    background-color: rgb(6, 131, 14);
+    cursor: default;
+}
