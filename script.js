@@ -26,31 +26,26 @@ const renderTime = (segundos, minutos, horas, millisegundos) => {
 };
 
 const startTime = () => {
-
     startButton.setAttribute("disabled", "true");
     pauseButton.removeAttribute("disabled");
     restartButton.removeAttribute("disabled");
 
-
     interval = setInterval(() => {
         millisegundos++;
-        while (millisegundos === 100) {
+        if (millisegundos === 100) {
             millisegundos = 0;
             segundos++;
-            while (segundos === 1000) {
+            if (segundos === 60) {
                 segundos = 0;
                 minutos++;
-            }
-
-            while (minutos === 1000) {
-                segundos = 0;
-                minutos = 0;
-                horas++;
+                if (minutos === 60) {
+                    minutos = 0;
+                    horas++;
+                }
             }
         }
 
         renderTime(segundos, minutos, horas, millisegundos);
-        console.log(horas, ":", minutos, ":", segundos);
     }, 10);
 };
 
