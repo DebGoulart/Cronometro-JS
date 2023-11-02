@@ -1,31 +1,25 @@
+# Cronômetro JS
 
-**Nome do Projeto:**  Cronometro.js
+Um simples cronômetro desenvolvido em JavaScript, HTML e CSS. 
 
+O cronômetro possui recursos de pausar, reiniciar e marcar tempos. Foi criado como um projeto pessoal para aprimorar minhas habilidades em JavaScript e DOM manipulation.
 
+![Currency Converter](img/Screenshot-conversor.png)
 
-**Descrição:**
+## Funcionalidades
 
-Este é um simples cronômetro desenvolvido em JavaScript, HTML e CSS. O cronômetro possui recursos de pausar, reiniciar e marcar tempos. Foi criado como um projeto pessoal para aprimorar minhas habilidades em JavaScript e DOM manipulation.
-
-**Funcionalidades:**
 - Iniciar e pausar o cronômetro.
 - Reiniciar o cronômetro para o tempo inicial.
 - Exibir tempos decorridos em horas, minutos, segundos e milissegundos.
 
-**Tecnologias Utilizadas:**
-- HTML
-- CSS
-- JavaScript
+## Aviso 🛑
 
-**Instruções de Uso:**
+Será implementado futuramente novas funcionalidades ao projeto, como um marcador de tempo.
 
-Clique no link: https://debgoulart.github.io/Cronometro.js/ 
+## Autores
 
-**Ou**
+- [Deborah Goulart](https://github.com/DebGoulart) - Desenvolvedora
 
-1. Clone este repositório em sua máquina.
-2. Abra o arquivo index.html em seu navegador.
-3. Use os botões fornecidos para controlar o cronômetro.
+## Licença
 
-
-
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter mais detalhes.
