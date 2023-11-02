@@ -1,25 +1,26 @@
-# Cronômetro JS
+# Stopwatch Js
 
-Um simples cronômetro desenvolvido em JavaScript, HTML e CSS. 
+A simple stopwatch developed using JavaScript, HTML, and CSS.
 
-O cronômetro possui recursos de pausar, reiniciar e marcar tempos. Foi criado como um projeto pessoal para aprimorar minhas habilidades em JavaScript e DOM manipulation.
+The stopwatch features the ability to pause, restart, and record times. It was created as a personal project to enhance my skills in JavaScript and DOM manipulation.
 
-![Currency Converter](img/Screenshot-conversor.png)
+![Stopwatch Js](img/Screenshot%20from%202023-11-02%2013-58-19.png)
 
-## Funcionalidades
+## Features
 
-- Iniciar e pausar o cronômetro.
-- Reiniciar o cronômetro para o tempo inicial.
-- Exibir tempos decorridos em horas, minutos, segundos e milissegundos.
+- Start and pause the stopwatch.
+- Restart the stopwatch to the initial time.
+- Display elapsed times in hours, minutes, seconds, and milliseconds.
 
-## Aviso 🛑
+## Notice 🛑
 
-Será implementado futuramente novas funcionalidades ao projeto, como um marcador de tempo.
+Additional features, such as a time marker, will be implemented in the project in the future.
 
-## Autores
+## Authors
 
-- [Deborah Goulart](https://github.com/DebGoulart) - Desenvolvedora
+- [Deborah Goulart](https://github.com/DebGoulart) - Developer
 
-## Licença
+## License
 
-Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter mais detalhes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
+
